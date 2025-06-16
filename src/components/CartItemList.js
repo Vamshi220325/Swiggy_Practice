@@ -2,8 +2,14 @@ import React from 'react'
 
 
 import { RES_IMG_URL } from '../utils/constants';
+import { useDispatch } from 'react-redux';
+import { removeItem } from '../utils/cartSlice';
 
 const CartItemList = ({items}) => {
+    const dispatch=useDispatch();
+    const RemoveFromCart=(id)=>{
+            dispatch(removeItem(id));
+    }
     
   
   return (
@@ -21,7 +27,7 @@ const CartItemList = ({items}) => {
                     <p className='text-xs'>{item?.card?.info?.description}</p>
                      </div>
                      <div className='w-3/12'>
-                     
+                      <button className=' absolute p-2 mb-1 rounded-lg bg-red-600 text-white' onClick={()=>RemoveFromCart(item.card.info.id)}>Remove</button>
                       <img alt="cart-img"className=" rounded-lg"src={RES_IMG_URL+item.card.info.imageId}/>
                     
                       </div>               

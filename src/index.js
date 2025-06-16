@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import About from './components/About';
-import Contact from './components/Contact';
+
 import Error from './components/Error';
 
   import { createBrowserRouter,RouterProvider } from 'react-router-dom';
@@ -12,6 +12,7 @@ import Error from './components/Error';
 import Body from './components/Body';
 import Cart from './components/Cart';
 import RestaurantMenu from './components/RestaurantMenu';
+import Shimmer from './components/Shimmer';
 
 
 const Grocery=lazy(()=>
@@ -25,13 +26,10 @@ const appRouter=createBrowserRouter([
     children:[
       {path:"/",
     element:<Body/>},
-      {  
-        path:"/contact",
-        element:<Contact/>
-      },
+      
       {  
         path:"/grocery",
-        element:<Suspense fallback={<h1>wait</h1>}> <Grocery/></Suspense>
+        element:<Suspense fallback={<Shimmer/>}> <Grocery/></Suspense>
       },
       {
         path:"/about",

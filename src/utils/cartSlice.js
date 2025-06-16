@@ -7,8 +7,13 @@ const cartSlice=createSlice({
         addItem:(state,action)=>{
             state.items.push(action.payload)
         },
-        removeItem:(state)=>{
-            state.items.pop();
+        removeItem:(state,action)=>{
+          
+            
+            const specificItem=state.items.filter((item)=>item.card.info.id);
+            const index=state.items.indexOf(specificItem);
+            state.items.splice(index,1);
+           
         },
         clearCart:(state)=>{
             state.items.length=0;

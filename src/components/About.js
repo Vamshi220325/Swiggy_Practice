@@ -11,11 +11,11 @@ class About extends React.Component{
    return (
     <div>
       <div>
-        <UserContext.Consumer>
+        {/* <UserContext.Consumer>
           {({loggedInUser})=><h2>{loggedInUser}</h2>}
-        </UserContext.Consumer>
+        </UserContext.Consumer> */}
       </div>
-      <UserClass name="Vamshi (class)"/>
+      <UserClass />
     </div>
   )
   }

@@ -21,7 +21,10 @@ const RestaurantCaterogy = ({data,showItems,setShowIndex}) => {
             <span className='font-bold text-3xl'>&#8681;</span>
         </div>
           <div className='flex'>
-            {toggle&&showItems&& <AccordionBody items={data.itemCards}/>} 
+            {
+            toggle&&showItems&& 
+            <AccordionBody items={data.itemCards}/>
+            } 
           </div>
            
         </div>

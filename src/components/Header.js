@@ -16,23 +16,23 @@ const Header = () => {
     const onlineStatus=useOnlineStatus();
     //subsribing to store using selector
     const cartItems=useSelector((store)=>store.cart.items);
-    console.log(cartItems);
+   
   return (
-    <div className='flex justify-between '>
+    <div className='flex  '>
        <div>
         <img className="w-44 m-2 h-40"src={LOGO_URL}alt="swiggy-logo"/>
        </div>
        <div className="  flex bg-gradient-to-b from-orange-400 w-full justify-between m-2 px-10 border-b-2 py-16">
        <Link to="/"className=' font-bold text-xl cursor-pointer mx-4 '>Home</Link> 
         <Link to="/about"className=' font-bold text-xl cursor-pointer mx-4 '>About Us</Link>
-        <Link to="/contact"className=' font-bold text-xl cursor-pointer mx-4'>Contact Us</Link>
+        
 
           <Link to="/cart"className=' font-bold text-xl cursor-pointer mx-4'>Cart({cartItems.length})</Link>
        
         <Link to="/grocery"className=' font-bold text-xl cursor-pointer mx-4'>Grocery</Link>
-        <button className="font-bold text-lg bg-blue-500 text-white px-2 mx-4 rounded-lg " onClick={()=>(handleSignInbtn())}>{toggleSignIn}</button>
-         {onlineStatus?<div className="font-bold text-lg bg-green-600 text-white px-2 mx-2 rounded-lg ">Online</div>:
-         <div className="font-bold text-lg bg-red-600 text-white px-2 mx-4 rounded-lg ">Offline</div>
+        <button className="font-bold text-lg bg-blue-500 text-white px-2 mx-4 rounded-lg " onClick={handleSignInbtn}>{toggleSignIn}</button>
+         {//font-bold text-lg text-white px-2 mx-4 rounded-lg
+          <div className={`'font-bold text-lg text-white px-2 mx-4 rounded-lg rounded-lg' ${onlineStatus?'bg-green-600':'bg-red-600'}`}>{onlineStatus?"Online":"Offline"}</div>
          }
          
         

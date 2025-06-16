@@ -10,12 +10,11 @@ import appStore from './utils/AppStore';
 
 
 function App() {
+     
   const [userName,setUserName]=useState();
   useEffect(()=>{
-const data={
-  name:"vamshi"
- }
- setUserName(data.name);
+   const data={name:"vamshi"}
+   setUserName(data.name);
   },[]);
 
 

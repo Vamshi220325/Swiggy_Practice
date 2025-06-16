@@ -8,7 +8,8 @@ export const AccordionBody = ({items}) => {
   const handleAddItemToCart=(item)=>{
     // dispatch an action
     dispatch(addItem(item))
-  
+    
+    
   }
     
   return (

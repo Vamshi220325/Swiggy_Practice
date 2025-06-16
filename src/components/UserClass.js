@@ -21,23 +21,23 @@ class UserClass extends React.Component{
        })
 
    }
+   
    render(){
     
-    const {name,login,
-avatar_url
-}=this.state.userInfo;
+    const {name,login,avatar_url}=this.state.userInfo;
    
-    return ( <div className="text-center bg-gray-200 p-6 m-4 w-fit rounded-lg ">
+    return ( 
+        <div className="flex justify-center">
+    <div className="text-center bg-gray-200 p-6 m-4 w-fit rounded-lg ">
             <h1 className="font-bold text-xl">About</h1>
               
-                <img src={
-avatar_url
-} alt="contactPic" />
-            <h2 className="text-lg">name: {name}</h2>
+                <img className="w-36 ml-3"src={avatar_url} alt="contactPic" />
+            <h2 className="text-lg">Name: {name}</h2>
             <h3 className="text-lg">{login}</h3>
-            <h3 className=" text-lg">liked this concept</h3>
+            <h3 className=" text-lg">Phone Num:xxxxxxxxx</h3>
             <h2 className=" text-lg">Gmail:xxxxxxxxxxxxx</h2>
             <h3 className=" text-lg">NIT Warangal</h3>
+       </div>
        </div>)
    }
 }
