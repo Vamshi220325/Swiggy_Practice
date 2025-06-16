@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkswiggy_practice=self.webpackChunkswiggy_practice||[]).push([[70],{9070:(s,e,c)=>{c.r(e),c.d(e,{default:()=>l});c(5043);var a=c(6543),i=c(579);const l=()=>(0,i.jsx)("div",{className:" flex justify-center mt-10 ",children:(0,i.jsx)("img",{className:"rounded-lg",src:a.gl,alt:"comingSoon-img"})})}}]);
+//# sourceMappingURL=70.4ad6305c.chunk.js.map

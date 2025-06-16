@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Swiggy-Practice/static/css/main.0e4b0120.css",
+    "main.js": "/Swiggy-Practice/static/js/main.87d8f1d1.js",
+    "static/js/70.4ad6305c.chunk.js": "/Swiggy-Practice/static/js/70.4ad6305c.chunk.js",
+    "static/js/453.35714061.chunk.js": "/Swiggy-Practice/static/js/453.35714061.chunk.js",
+    "index.html": "/Swiggy-Practice/index.html",
+    "main.0e4b0120.css.map": "/Swiggy-Practice/static/css/main.0e4b0120.css.map",
+    "main.87d8f1d1.js.map": "/Swiggy-Practice/static/js/main.87d8f1d1.js.map",
+    "70.4ad6305c.chunk.js.map": "/Swiggy-Practice/static/js/70.4ad6305c.chunk.js.map",
+    "453.35714061.chunk.js.map": "/Swiggy-Practice/static/js/453.35714061.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e4b0120.css",
+    "static/js/main.87d8f1d1.js"
+  ]
+}
